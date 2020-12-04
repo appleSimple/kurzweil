@@ -1,0 +1,159 @@
+        @import url( https://fonts.googleapis.com/earlyaccess/jejugothic.css);
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+        body{
+            font-family: 'Jeju Gothic','Nanum Gothic', sans-serif;
+            position: relative;
+            height: 100vh;
+        }
+        body, html{
+            overflow: hidden;
+        }
+        :root{
+            --black : black;
+        }
+        .bo{
+            border:1px solid red;
+        }
+        /*캐로셀 전체 화면에 맞추기(100vh)*/
+        #topCarousel .carousel-item:nth-of-type(1){
+             background: url(../img/carousel_01_2.jpg) no-repeat center / cover;
+             height: 100vh;
+        }
+        #topCarousel .carousel-item:nth-of-type(2){
+             background: url(../img/carousel_02_2.jpg) no-repeat bottom / cover;
+             height: 100vh;
+        }
+        #topCarousel .carousel-item:nth-of-type(3){
+             background: url(../img/carousel_03_2.jpg) no-repeat center / cover;
+             height: 100vh;
+        }
+        #topCarousel{
+            overflow: hidden;
+        }
+        /*캐로셀 안에 캡션대신 넣은 이미지 위치 맞추기*/
+        #topCarousel .carousel-caption{
+            /*border:1px solid red;*/
+            position: absolute;
+        }
+        /*#topCarousel .carousel-item:nth-of-type(1) .carousel-caption{
+            left: 50%;
+            margin-left: 200px;
+            bottom: 100px;
+        }*/
+
+
+        #topCarousel .carousel-item:nth-of-type(2) .carousel-caption h5 img{
+            width: 500px;
+        }
+        #topCarousel .carousel-item:nth-of-type(2) .carousel-caption p img{
+            width: 400px;
+        }
+        #topCarousel .carousel-item:nth-of-type(2) .carousel-caption{
+            bottom: 100px;
+        }
+        #topCarousel .carousel-item:nth-of-type(3) .carousel-caption h5 img{
+            width: 700px;
+        }
+        #topCarousel .carousel-item:nth-of-type(3) .carousel-caption p img{
+            width: 400px;
+        }
+        /*#topCarousel .carousel-item::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            border:5px solid red;
+        }*/
+        /*캐로셀 좌우 버튼 마우스 올리면 나타나도록 설정*/
+        #topCarousel .carousel-control-next{
+            right: -200px;
+            transition: right 1s;
+        }
+        #topCarousel .carousel-control-prev{
+            left: -200px;
+            transition:left 1s;
+        }
+        #topCarousel:hover .carousel-control-next{
+            right: 0px;
+        }
+        #topCarousel:hover .carousel-control-prev{
+            left: 0px;
+        }
+
+        /*loading 이미지 위치잡기*/
+        .loading .d-flex img{
+            position: absolute;
+            top: 50%;
+            width: 150px;
+            margin-top: -74px;
+        }
+        .loading{
+            height: 100vh;
+        }
+        .bg-black{
+            background-color: var(--black);
+        }
+        .search_input{
+            min-width: 230px;
+        }
+        section#believe{
+            background: url(../img/menu3_about_bg.jpg) center /cover fixed;
+            padding: 60px;
+        }
+        .w370{
+            max-width: 370px;
+        }
+
+        section#video{
+            background: url(../img/menu4_background_bg.jpg) center / cover fixed;
+            padding :80px;
+        }
+        .video_text{
+            color: black;
+        }
+        .video_text:hover{
+            color :grey;
+            text-decoration: none;
+        }
+
+        section#FAQ{
+            background: url(../img/menu7_background_bg.jpg) center / cover fixed;
+            padding :80px;
+        }
+
+        .card{
+            background-color: rgba(255,255,255,0.1);
+            border: 1px solid white;
+        }
+        .collapse-btn-hover{
+            color: grey;
+        }
+        .collapse-btn-hover:hover{
+            color: white;
+        }
+
+        .btn.focus, .btn:focus {
+            outline: 0;
+            box-shadow: 0 0 0 0.15rem rgba(255,255,255,0.2);
+        }
+
+        .input-text-white::placeholder{
+            color :white;
+        }
+        #inputSite option{
+        color:gray;
+        }
+
+        .bg-black{
+            background-color: black;
+        }
+
+        /*waypoint가 작동하기 전 요소들을 보이지 않도록 설정*/
+        .wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9, .wp10, .wp11, .wp12, .wp13, .wp14, .wp15{
+            visibility: hidden;
+        }
+        .animate__animated{
+            visibility: visible;
+        }
